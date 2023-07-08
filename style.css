@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root{
+    --header-big: rgb(60, 171, 205); 
+    --header-mid: rgb(39, 109, 131);
+    --header-sm: rgb(39, 109, 131);
+    --card-header-title: rgb(90, 153, 172);;
+    --test: black;
+    --font1: 'Roboto';
+}
+
+
+
+#name {
+    font: sans-serif;
+    font-size: 50px;
+    color: var(--header-big);
+}
+
+/*avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,*/
+
+#role{
+    font-size: 20px;
+    color: var(--header-mid);
+}
+
+#company{
+    font-size: 12px;
+    color: var(--header-sm);
+}
+
+
+
+/*20px/2.0em*/
+#nav-div-ul{
+    display:flex;
+    justify-content: center;
+    margin: auto 0;
+}
+
+#jumbo{
+    margin-bottom: 0;
+    background-color: black;
+    color: rgb(60, 171, 205);
+    letter-spacing: .2em;
+    word-spacing: 0.8em;
+    border-radius: 0;
+    padding: 40px;
+} 
+
+.skill-list{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+/*
+.attribs{
+    background-color: #1c1d20;
+}
+*/
+
+.card-header{
+    color: var(--card-header-title);
+}
+
+#title-list{
+    font-family: var(--font1);
+    letter-spacing: 2px;
+    padding: 10px 0;
+    justify-content: space-around;
+    
+}
+
+#title-nav{
+    background: rgba(0,0,0, .8);
+    border-top: 1px solid rgba(255,255,255, .2);
+    border-bottom: 1px solid rgba(255,255,255, .2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav.nav-pills.nav-justified .nav-link.active{
+    background-color: #13252b;
+}
+
+.circle{
+    border-radius: 50%;
+    width:100%;
+    height: 100%;
+
+}
+
+.container-fluid{
+    margin-top: 50px;
+}
+
+.timeline{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+}
+
+.timeline > ul{
+    list-style: none;
+}
+
+.timeline > ul > li{
+    padding: 20px;
+    background-color:#1f1f1f ;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow:  rgba(240, 140, 140, 0.573) 0px 5px 10px;
+}
+
+
+.timeline-content .date{
+    font-size: 15px;
+    font-weight: 10;
+    letter-spacing: 2px;
+}
+
+.description-ul  > li{
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(179, 189, 189);
+}
+
+
+
+@media screen {
+
+    .timeline::before{
+        content:'';
+        position: absolute;
+        background-color:grey;
+        width: 2px;
+        height: 100%;
+    }
+
+
+    .timeline > ul > li{
+        width: 100%;
+        margin-bottom: 80px;
+        position: relative;
+        border-radius: 10px 30px 30px 30px;
+    }
+
+    .timeline > ul > li::after{
+        content:'';
+        background-color: white;
+        width:20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        top:0;
+        left: -50px;
+        transform: translate(50%, -50%);
+
+    }
+
+    .timeline-content .date{
+        position: absolute;
+        /*top: -20px;*/
+        right: 10px;
+        top: 80px;
+    }
+    
+    .timeline > ul > li:hover:after{
+        background-color: rgb(173, 98, 98);
+    }
+
+}
+
+.eduwork-card-header{
+    color: var(--card-header-title);
+    letter-spacing: 5px;
+    word-spacing: 4px;
+    font-weight: 10;
+}
+
+.eduwork-role{
+    font-weight: 10;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color:#949494;
+}
+
+
+
+
+.eduwork-role-date  
+{
+    display: flex;
+    
+    justify-content: space-between;
+
+}
+
+.date{
+    font-size: 15px;
+    font-weight: 10;
+    letter-spacing: 2px;
+}
+
+footer{
+    border-top: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 1px;
+
+}
